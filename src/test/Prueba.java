@@ -1,8 +1,6 @@
 package test;
 
-import dao.VehiclesDao;
 import domain.Fecha;
-import domain.Vehicle;
 import java.util.Scanner;
 import service.ConcesionarioService;
 import service.IConcesionarioService;
