@@ -1,0 +1,46 @@
+---------------Scripts de creación de las tablas Vehículos y Ventas---------------
+
+CREATE TABLE VEHICLES
+(
+ID_VEHICLE NUMBER PRIMARY KEY,
+MARCA VARCHAR2(100),
+MODELO VARCHAR2(100),
+TYPE VARCHAR2(100),
+PRICE NUMBER
+);
+
+CREATE TABLE SALES
+(
+ID_SALE NUMBER PRIMARY KEY,
+COMPRADOR VARCHAR2(100),
+FECHA DATE,
+REFERENCED_VEHICLE NUMBER REFERENCES VEHICLES(ID_VEHICLE)
+);
+
+---------------Script para obtener todos los vehículos en stock---------------
+
+SELECT * FROM VEHICLES;
+
+---------------Script para obtener un vehículo por su ID---------------
+
+SELECT * FROM VEHICLES WHERE ID_VEHICLE=number;
+
+---------------Script para insertar una nueva venta---------------
+
+INSERT INTO SALES (COMPRADOR, FECHA, REFERENCED_VEHICLE) VALUES ('Javier', '22-10-2021', number);
+
+o
+
+INSERT INTO SALES VALUES ('Javier', '22-10-2021', number);
+
+---------------Script para obtener una venta por ID (incluido el vehículo relacionado)---------------
+
+SELECT * FROM SALES JOIN VEHICLES
+   ON(REFERENCED_VEHICLE=ID_VEHICLE)
+WHERE ID_SALE=number;
+
+---------------Script para obtener un listado de ventas por año (incluido los vehículos relacionados)---------------
+
+SELECT * FROM SALES JOIN VEHICLES
+   ON(REFERENCED_VEHICLE=ID_VEHICLE)
+GROUP BY YEAR(FECHA);
