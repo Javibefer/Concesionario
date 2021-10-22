@@ -9,7 +9,7 @@ public class VehiclesDao {
     private List<Vehicle> vehicles;
 
     public VehiclesDao() {
-        this.vehicles = new ArrayList();
+        this.vehicles = new ArrayList<>();
     }
     
     public void agregateVehicle(Vehicle vehicle){

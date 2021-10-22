@@ -9,7 +9,7 @@ public class SalesDao {
     public List<Sale> sales;
 
     public SalesDao() {
-        this.sales = new ArrayList();
+        this.sales = new ArrayList<>();
     }
     
     public void agregateSale(Sale sale){

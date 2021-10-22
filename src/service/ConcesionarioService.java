@@ -11,8 +11,8 @@ public class ConcesionarioService implements IConcesionarioService{
     private final SalesDao salesDao;
 
     public ConcesionarioService() {
-        this.vehiclesDao = new VehiclesDao();
-        this.salesDao = new SalesDao();
+        this.vehiclesDao = new VehiclesDao<>();
+        this.salesDao = new SalesDao<>();
         Vehicle vehicle1 = new Vehicle("Coche", "Peugeot", 2020, 10000);
         Vehicle vehicle2 = new Vehicle("Moto", "Honda", 2019, 5100);
         Vehicle vehicle3 = new Vehicle("Limusina", "Audi", 2021, 60000.87);

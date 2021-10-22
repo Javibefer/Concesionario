@@ -4,11 +4,6 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Practicas/Concesionario/src/test/Prueba.java</file>
-            <file>file:/C:/Practicas/Concesionario/src/dao/SalesDao.java</file>
-            <file>file:/C:/Practicas/Concesionario/src/dao/VehiclesDao.java</file>
-            <file>file:/C:/Practicas/Concesionario/src/domain/Sale.java</file>
-            <file>file:/C:/Practicas/Concesionario/src/domain/Fecha.java</file>
-            <file>file:/C:/Practicas/Concesionario/src/service/ConcesionarioService.java</file>
         </group>
     </open-files>
 </project-private>
