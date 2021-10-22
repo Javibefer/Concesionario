@@ -39,8 +39,8 @@ SELECT * FROM SALES JOIN VEHICLES
    ON(REFERENCED_VEHICLE=ID_VEHICLE)
 WHERE ID_SALE=number;
 
----------------Script para obtener un listado de ventas por año (incluido los vehículos relacionados)---------------
+---------------Script para obtener un listado de ventas especificado el año (incluido los vehículos relacionados)---------------
 
 SELECT * FROM SALES JOIN VEHICLES
    ON(REFERENCED_VEHICLE=ID_VEHICLE)
-GROUP BY YEAR(FECHA);
+WHERE YEAR(FECHA)=año;
